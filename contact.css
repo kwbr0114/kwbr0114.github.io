@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+main {
+    text-align: center;
+}
+form {
+    width: 70%;
+    margin: 0 auto 120px auto;
+}
+.circle {
+    position: absolute;
+    background-image: linear-gradient(260deg, #fffac4, #a4f2c1 50%, #619bf3);
+    opacity: 0.8;
+    z-index: -1;
+    height: 110px;
+    width: 110px;
+    left: 35%;
+    top: 12%;
+    border-radius: 70% 100% 74% 100% / 100% 100% 81% 75%;
+}
+.sectiontitle .en {
+    margin-bottom: 3rem;
+}
+.form-row {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #f2f4f5;
+}
+.form-row:last-child {
+    border-bottom: none;
+}
+.form-label {
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+.form-label label {
+    font-weight: bold;
+}
+.form-label span {
+    margin-left: 10px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #bcdf21;
+}
+#privacyPolicy {
+    text-align: start;
+}
+.privacy-comment {
+    line-height: 4;
+}
+#privacyCheck span {
+    font-weight: bold;
+}
+/* フォームパーツのデザイン */
+input,
+textarea {
+    background-color: #f2f7f8;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #333;
+    flex-grow: 1;
+}
+.privacy-policy {
+    background-color: #f2f7f8;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 20px;
+    width: 650px;
+    height: 200px;
+    overflow-y: scroll;
+}
+#contact > form > div:nth-child(6) {
+    justify-content: space-between;
+}
+#contact > form > div:nth-child(7) {
+    display: block;
+}
+#contact > form > div:nth-child(8) {
+    display: block;
+}
+input::placeholder,
+textarea::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+select {
+    background-color: #f2f7f8;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+button {
+    font-size: 16px;
+    cursor: pointer;
+    margin: 30px auto 0 auto;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 60px;
+    color: #fff;
+    letter-spacing: 0.6em;
+    font-weight: 500;
+    background-color: #5fd1b8;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(4px);
+}
+/*-------------------------------------------------------
+スマートフォン
+-------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+    .form-row {
+        display: block;
+        text-align: center;
+    }
+    textarea {
+        border-radius: 6px;
+        padding: 15px 40px;
+    }
+}
