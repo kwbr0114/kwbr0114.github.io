@@ -1,0 +1,349 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 220px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #3f3c3a;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #3f3c3a;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+main {
+    padding-top: 80px;
+}
+
+/*ヘッダ－*/
+#header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff9d;
+    padding: 0 20px;
+    position: fixed;
+    box-shadow: 5px 5px 5px #aaadb111;
+    backdrop-filter: blur(6px);
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+#header .logo {
+    width: 100%;
+    max-width: 7%;
+    line-height: 0;
+}
+
+#header .logo a {
+    display: block;
+}
+#header .logo a:hover {
+    opacity: inherit;
+}
+
+#header .navi .menu {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+#header .navi .menu > li {
+    margin-left: 40px;
+}
+
+#header .navi .menu .signup a {
+    background-color: #bcdf21;
+    border-radius: 30px;
+    color: #fff;
+    display: block;
+    font-weight: 500;
+    padding: 8px 30px;
+    text-align: center;
+}
+
+#header .mask {
+    display: none;
+}
+
+/*メイン*/
+.sectiontitle {
+    font-size: 2.28rem;
+    font-weight: 800;
+    text-align: center;
+}
+.sectiontitle .ja {
+    display: block;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.8rem;
+}
+.sectiontitle .en {
+    display: block;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+    color: #afacaa;
+}
+
+/*フッター*/
+.pagetop {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    border: solid 1px #fff;
+    border-radius: 60%;
+    background-image: linear-gradient(180deg, #fffac4, #a4f2c1 40%, #619bf3);
+    cursor: pointer;
+    right: 25px;
+    bottom: 25px;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.3s, transform 0.5s cubic-bezier(0.33, 1, 0.68, 1),
+        border-radius 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.pagetop:hover {
+    border-radius: 61% 71% 67% 80% / 75% 81% 74% 64%;
+    transform: translateY(0);
+}
+
+.pagetop::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-left: 3px solid #fff;
+    border-top: 3px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%) rotate(45deg);
+}
+
+.pagetop.visible {
+    opacity: 0.9;
+    transform: translateY(0);
+}
+
+#footer .footerdesign {
+    width: 100%;
+    background-color: #619bf3;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 3600px 3600px 0px 0px/1200px 1200px 0px 0px;
+}
+#footer a {
+    display: inline-block;
+}
+#footer a img {
+    width: 220px;
+    margin-bottom: 1.5rem;
+}
+#footer ul {
+    justify-content: center;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    display: flex;
+}
+#footer ul a {
+    color: #fff;
+}
+#footer ul.etc {
+    font-size: 0.65rem;
+}
+#footer ul li::after {
+    content: "|";
+    color: #fff;
+    padding: 0.8rem;
+}
+#footer ul li:first-child::before {
+    content: "|";
+    color: #fff;
+    padding: 0.8rem;
+}
+#footer small {
+    color: #fff;
+    font-weight: normal;
+}
+
+/*-------------------------------------------------------
+ウィンドウ幅・スマートフォン
+-------------------------------------------------------*/
+@media screen and (max-width: 1080px) {
+    main {
+        padding-top: 60px;
+    }
+    #header {
+        height: 60px;
+    }
+
+    #header .logo {
+        width: 100%;
+        max-width: 60px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #header .navi {
+        width: 80%;
+        height: 100vh;
+        background-color: #619bf3;
+        position: fixed;
+        top: 0;
+        left: -120%;
+        z-index: 20;
+        transition: all 0.6s;
+    }
+    #header .navi.active {
+        left: 0;
+    }
+    #header .navi .menu {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        padding: 60px 0;
+        overflow: auto;
+        text-align: center;
+    }
+    #header .navi .menu li {
+        width: 100%;
+        border-top: solid 1px #fff;
+        margin-left: 0;
+    }
+    #header .navi .menu li a {
+        width: 100%;
+        display: block;
+        padding: 20px;
+        color: #fff;
+    }
+    #header .navi .menu .signup {
+        padding: 30px 0;
+    }
+    #header .navi .menu .signup a {
+        max-width: 160px;
+        margin: 0 auto;
+    }
+
+    #header .hamburger {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        position: fixed;
+        top: 5px;
+        right: 10px;
+        z-index: 30;
+    }
+    #header .hamburger span {
+        width: 30px;
+        height: 2px;
+        background-color: #3f3c3a;
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+        transition: all 0.4s;
+    }
+    #header .hamburger.active span {
+        background-color: #619bf3;
+    }
+    #header .hamburger span:nth-of-type(1) {
+        top: 16px;
+    }
+    #header .hamburger span:nth-of-type(2) {
+        top: 25px;
+    }
+    #header .hamburger span:nth-of-type(3) {
+        top: 34px;
+    }
+    #header .hamburger.active span:nth-of-type(1) {
+        top: 24px;
+        transform: rotate(-45deg);
+    }
+    #header .hamburger.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    #header .hamburger.active span:nth-of-type(3) {
+        top: 24px;
+        transform: rotate(45deg);
+    }
+    #header .mask.active {
+        width: 100%;
+        height: 100%;
+        display: block;
+        opacity: 0.8;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+/*-------------------------------------------------------
+スマートフォン
+-------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+    /*メイン*/
+    .sectiontitle .ja {
+        font-size: 1.8rem;
+        font-weight: 800;
+        text-align: center;
+        display: block;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0.5rem;
+    }
+    /* フッター */
+    .pagetop {
+        width: 70px;
+        height: 70px;
+    }
+    #footer a img {
+        width: 180px;
+        margin-bottom: 1.5rem;
+    }
+    #footer nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 60px;
+    }
+    #footer ul {
+        font-size: 0.9em;
+        line-height: 2;
+        flex-direction: column;
+        text-align: left;
+    }
+    #footer ul li::after {
+        content: "";
+        padding: 0;
+    }
+    #footer ul li:first-child::before {
+        content: "";
+        padding: 0;
+    }
+}
