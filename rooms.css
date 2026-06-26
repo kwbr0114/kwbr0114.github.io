@@ -1,0 +1,412 @@
+@charset "UTF-8";
+html {
+    scroll-behavior: unset;
+}
+main {
+    text-align: center;
+}
+#namba {
+    scroll-margin-top: -220px;
+}
+.circle2 {
+    position: absolute;
+    background-image: linear-gradient(140deg, #fffac4, #a4f2c1 40%, #619bf3);
+    opacity: 0.65;
+    z-index: -1;
+    height: 170px;
+    width: 170px;
+    left: 50%;
+    top: 10%;
+    border-radius: 70% 100% 74% 100% / 100% 100% 81% 75%;
+}
+#roominf h2:nth-child(2) {
+    font-weight: 800;
+    font-size: 28px;
+    margin-top: 2em;
+}
+#roominf {
+    margin-bottom: 120px;
+}
+#roominf .roominf {
+    position: relative;
+}
+/* #roominf .roominf a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+} */
+#roominf ul {
+    padding-inline-start: 0;
+}
+
+#roominf h3 {
+    font-size: 1.6em;
+    font-weight: bold;
+    line-height: 0.2;
+    text-align: left;
+    position: relative;
+    margin-bottom: 32px;
+}
+#roominf h3::after {
+    content: "";
+    width: 90%;
+    height: 1px;
+    display: inline-block;
+    background-color: #888;
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+}
+
+#roominf li img {
+    max-height: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 0.6em;
+}
+
+#roominf ul li {
+    padding-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+#roominf ul li:nth-child(2) {
+    padding-left: 1.5em;
+}
+
+#roominf ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#roominf .roominf {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 65%;
+    height: 10%;
+    border-radius: 30px;
+    margin: 16px auto;
+    background-color: #f2f7f8;
+    box-shadow: 0px 1px 8px 0px rgba(65, 66, 70, 0.4);
+}
+
+#roominf .roomimg1 {
+    width: 300px;
+    padding: 0;
+    border-radius: 30px 0 0 30px;
+    background-image: url(../img/room_detail_10f_c1.jpg);
+    margin-right: 0;
+    background-repeat: no-repeat;
+}
+#roominf .roomimg2 {
+    width: 300px;
+    padding: 0;
+    border-radius: 30px 0 0 30px;
+    background-image: url(../img/room_detail_17f_a2.jpg);
+    margin-right: 0;
+}
+#roominf .roomimg3 {
+    width: 300px;
+    padding: 0;
+    border-radius: 30px 0 0 30px;
+    background-image: url(../img/room_detail_17f_b1.jpg);
+    margin-right: 0;
+}
+#roominf .roomimg4 {
+    width: 300px;
+    padding: 0;
+    border-radius: 30px 0 0 30px;
+    background-image: url(../img/room_detail_17f_c2.jpg);
+    margin-right: 0;
+}
+#roominf .roomimg5 {
+    width: 300px;
+    padding: 0;
+    border-radius: 30px 0 0 30px;
+    background-image: url(../img/room_detail_20f_a1.jpg);
+    margin-right: 0;
+}
+#roominf .roomimg6 {
+    width: 300px;
+    padding: 0;
+    border-radius: 30px 0 0 30px;
+    background-image: url(../img/room_detail_20f_b1.jpg);
+    margin-right: 0;
+}
+#roominf .roomimg7 {
+    width: 300px;
+    padding: 0;
+    border-radius: 30px 0 0 30px;
+    background-image: url(../img/room_detail_21f_a1.jpg);
+    margin-right: 0;
+}
+#roominf .roomimg8 {
+    width: 300px;
+    padding: 0;
+    border-radius: 30px 0 0 30px;
+    background-image: url(../img/room_detail_21f_b1.jpg);
+    margin-right: 0;
+}
+#roominf .roomimg9 {
+    width: 300px;
+    padding: 0;
+    border-radius: 30px 0 0 30px;
+    background-image: url(../img/room_detail_21f_c1.jpg);
+    margin-right: 0;
+}
+#roominf .roomimg10 {
+    width: 330px;
+    padding: 0;
+    border-radius: 30px 0 0 30px;
+    background-image: url(../img/room_detail_7f_a1.jpg);
+    margin-right: 0;
+}
+#roominf .roomimg11 {
+    width: 300px;
+    padding: 0;
+    border-radius: 30px 0 0 30px;
+    background-image: url(../img/room_detail_7f_b1.jpg);
+    margin-right: 0;
+}
+#roominf .roomimg12 {
+    width: 300px;
+    padding: 0;
+    border-radius: 30px 0 0 30px;
+    background-image: url(../img/room_detail_7f_c2.jpg);
+    margin-right: 0;
+}
+#roominf .roomimg13 {
+    width: 300px;
+    padding: 0;
+    border-radius: 30px 0 0 30px;
+    background-image: url(../img/room_detail_7f_d1.jpg);
+    margin-right: 0;
+}
+
+#roominf .price {
+    text-align: right;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+#roominf .price .digit {
+    font-size: 2.2em;
+    font-weight: 800;
+}
+
+.nambaroom {
+    padding-top: 10px;
+    margin-top: -10px;
+}
+.nambaroom h2 {
+    font-weight: 800;
+    font-size: 28px;
+    margin-top: 4em;
+}
+.roomtxt {
+    margin-left: 20px;
+}
+/*-------------------------------------------------------
+スマートフォン
+-------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+    #roominf {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 80px;
+    }
+    #roominf .roominf {
+        display: inline-block;
+        flex-wrap: nowrap;
+        max-width: 80%;
+        height: 10%;
+        border-radius: 30px;
+        margin: 16px auto;
+        background-color: #f2f7f8;
+        box-shadow: 0px 1px 8px 0px rgba(65, 66, 70, 0.4);
+    }
+    #roominf .roomtxt {
+        padding: 0 20px;
+    }
+    #roominf .roomtxt ul li {
+        text-align: start;
+    }
+
+    #roominf .roomimg1 {
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        border-radius: 30px 30px 0px 0;
+        background-image: url(../img/room_detail_10f_c1.jpg);
+        margin-right: 2rem;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: 20% 50%;
+    }
+    #roominf .roomimg2 {
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        border-radius: 30px 30px 0px 0;
+        background-image: url(../img/room_detail_17f_a2.jpg);
+
+        margin-right: 2rem;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: 40% 25%;
+    }
+    #roominf .roomimg3 {
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        border-radius: 30px 30px 0px 0;
+        background-image: url(../img/room_detail_17f_b1.jpg);
+        margin-right: 2rem;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: 20% 45%;
+    }
+    #roominf .roomimg4 {
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        border-radius: 30px 30px 0px 0;
+        background-image: url(../img/room_detail_17f_c2.jpg);
+        margin-right: 2rem;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: 20% 40%;
+    }
+    #roominf .roomimg5 {
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        border-radius: 30px 30px 0px 0;
+        background-image: url(../img/room_detail_20f_a1.jpg);
+        margin-right: 2rem;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: 20% 40%;
+    }
+    #roominf .roomimg6 {
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        border-radius: 30px 30px 0px 0;
+        background-image: url(../img/room_detail_20f_b1.jpg);
+        margin-right: 2rem;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: 20% 45%;
+    }
+    #roominf .roomimg7 {
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        border-radius: 30px 30px 0px 0;
+        background-image: url(../img/room_detail_21f_a1.jpg);
+        margin-right: 2rem;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: 20% 60%;
+    }
+    #roominf .roomimg8 {
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        border-radius: 30px 30px 0px 0;
+        background-image: url(../img/room_detail_21f_b1.jpg);
+        margin-right: 2rem;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: 20% 30%;
+    }
+    #roominf .roomimg9 {
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        border-radius: 30px 30px 0px 0;
+        background-image: url(../img/room_detail_21f_c1.jpg);
+        margin-right: 2rem;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: 20% 60%;
+    }
+    #roominf .roomimg10 {
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        border-radius: 30px 30px 0px 0;
+        background-image: url(../img/room_detail_7f_a1.jpg);
+        margin-right: 2rem;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: 20% 50%;
+    }
+    #roominf .roomimg11 {
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        border-radius: 30px 30px 0px 0;
+        background-image: url(../img/room_detail_7f_b1.jpg);
+        margin-right: 2rem;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: 20% 50%;
+    }
+    #roominf .roomimg12 {
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        border-radius: 30px 30px 0px 0;
+        background-image: url(../img/room_detail_7f_c2.jpg);
+        margin-right: 2rem;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: 20% 45%;
+    }
+    #roominf .roomimg13 {
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        border-radius: 30px 30px 0px 0;
+        background-image: url(../img/room_detail_7f_d1.jpg);
+        margin-right: 2rem;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: 20% 40%;
+    }
+    #roominf h2:nth-child(2) {
+        font-weight: 800;
+        font-size: 28px;
+        margin-top: 2em;
+    }
+    #roominf > h2.umeda {
+        margin-bottom: 0;
+        font-size: 1.75rem;
+    }
+    #namba > h2 {
+        margin-bottom: 0;
+        font-size: 1.75rem;
+    }
+    #roominf h2.namba {
+        margin-bottom: 0;
+    }
+    .circle2 {
+        position: absolute;
+        background-image: linear-gradient(
+            140deg,
+            #fffac4,
+            #a4f2c1 40%,
+            #619bf3
+        );
+        opacity: 0.65;
+        z-index: -1;
+        height: 100px;
+        width: 100px;
+        left: 50%;
+        top: 8%;
+        border-radius: 70% 100% 74% 100% / 100% 100% 81% 75%;
+    }
+}
