@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="大阪の貸し教室・貸し会議室｜シルタス（siltas）梅田・なんば"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>siltas</title>
+        <link rel="icon" href="img/favicon.ico" />
+        <link rel="stylesheet" href="https://unpkg.com/dist/ress.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/contact.css" />
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <!-- ここからヘッダー -->
+        <header id="header">
+            <h1 class="logo">
+                <a href="index.html"
+                    ><img src="img/logo_header.png" alt="siltas"
+                /></a>
+            </h1>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navi">
+                <ul class="menu">
+                    <li><a href="index.html">トップ</a></li>
+                    <li><a href="rooms.html">貸し教室</a></li>
+                    <li>
+                        <a href="index.html#howtouse">ご利用の流れ</a>
+                    </li>
+                    <li><a href="index.html#news">お知らせ</a></li>
+                    <li><a href="">よくあるご質問</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="">ログイン</a></li>
+                    <li class="signup"><a href="">新規登録する</a></li>
+                </ul>
+            </nav>
+
+            <div class="mask"></div>
+        </header>
+        <!-- ここまでヘッダー -->
+
+        <!-- ここからメイン -->
+        <main class="wrapper">
+            <div class="circle"></div>
+            <h2 class="sectiontitle">
+                <span class="ja">お問い合わせ</span>
+                <span class="en">CONTACT</span>
+            </h2>
+            <div id="contact">
+                <form action="your-server-side-script.php" method="POST">
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="contact">お問い合わせ区分</label>
+                        </div>
+                        <select class="inquiry-select">
+                            <option value="">--選択してください--</option>
+                            <option value="touroku">会員登録について</option>
+                            <option value="kyousitu">貸し教室について</option>
+                            <option value="moisikomi">申し込みについて</option>
+                            <option value="yoyaku">
+                                予約変更・キャンセルについて
+                            </option>
+                            <option value="option">オプションについて</option>
+                            <option value="sonota">その他</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="name">お名前</label>
+                            <span>必須</span>
+                        </div>
+                        <input
+                            class="form-bg"
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="例) 山田 太朗"
+                            required
+                        />
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="email">メールアドレス</label>
+                            <span>必須</span>
+                        </div>
+                        <input
+                            class="form-bg"
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="例) abcd@xyz.com"
+                            required
+                        />
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="messagetitle">件名</label>
+                            <span>必須</span>
+                        </div>
+                        <textarea
+                            class="form-bg"
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="お問い合わせ内容をこちらにご記入ください(200文字以内)"
+                            required
+                        ></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="message">お問い合わせ内容</label>
+                            <span>必須</span>
+                        </div>
+                        <textarea
+                            class="form-bg"
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="お問い合わせ内容をこちらにご記入ください(200文字以内)"
+                            required
+                        ></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="messagetitle"
+                                >プライバシーポリシー</label
+                            >
+                        </div>
+                        <div id="privacyPolicy" class="privacy-policy">
+                            siltasでは、siltas会員様が安心してサービスをご利用頂けますよう、プライバシーポリシーを以下のように定め、それに従い個人情報保護に取り組んでいます。
+                            プライバシーポリシーの範囲
+                            このプライバシーポリシーは、弊社のsiltas会員(一般・講師・企業会員他すべての会員)サービスのご利用に際して適用されます。
+                            情報の収集と利用
+                            siltas会員様の個人情報を収集する場合は、その目的と利用方法をお知らせし、siltas会員様の同意をいただいた上で登録致します。
+                            目的と利用方法を逸脱した行為は致しません。
+                            情報の開示
+                            siltas会員様の個人情報に関して、siltas会員様から開示の請求があった場合は、弊社は所定の手続きを以って開示致します。
+                            また、何らかの事情でsiltas会員様の個人情報を第三者に開示及び提供する必要が生じた場合も、siltas会員様の承諾なしに開示及び提供することはございません。
+                            電子メール・DMについて
+                            弊社から、siltas会員様にとって有益と思われる情報を電子メールや郵便物にてsiltas会員様に送らせて頂く場合がございます。
+                            siltas会員様からのお申し出があった場合は、情報のお届けを停止致します。
+                            アクセスログの収集について
+                            弊社は、siltas会員様のコンピュータのハードウェア及びソフトウェア情報を収集することがあります。
+                            この情報には、IPアドレス、ブラウザの種類、ドメイン名、アクセス時間及び参照されるWebサイトのURLが含まれます。
+                            当社はこれらの情報を不正アクセスの監視、セキュリティやサービス品質の向上、Webサイトの利用動向等の調査・分析を行うための情報として利用いたします。
+                            cookieについて
+                            クッキー(Cookies)とは、siltas会員様が弊社会員サービスのWebサイトを訪問された際、より簡単・便利に当サイトを閲覧して頂くためのものです。
+                            これはsiltas会員様のプライバシーを侵害するものではありません。
+                            またsiltas会員様のコンピュータに悪影響を及ぼすこともございません。
+                            SSLについて
+                            弊社会員サービスのWebサイトでは、セキュリティ確保のため、個人情報の入力時には、情報が傍受、妨害又は改ざんされることを防ぐため、SSL技術によるデータの暗号化通信をしています。
+                            siltas会員様が入力して情報はSSL暗号化通信により保護されます。
+                            個人情報の取扱いについて
+                            弊社では、個人情報管理責任者を配置し、適切な個人情報の管理を行っております。
+                            弊社会員サービスのWebサイトで、siltas会員様からクレジットカード番号などの機密性の高い情報を頂く場合がございます。
+                            その際は、データを暗号化するなどの合理的な方法によって、情報の保護に努めます。
+                            このプライバシーの考え方の改定について
+                            今後、弊社はプライバシーの考え方の全部又は一部を改訂することがあります。
+                            重要な変更がある場合には、弊社会員サービスWebサイトにてお知らせ致します。
+                            お問い合わせ窓口について
+                            siltas会員様の個人情報の開示・訂正・利用停止などにつきましては、ご本人様確認を行ったうえで適宜対応させていただきます。
+                            お手数ではございますが、下記お問い合わせ窓口までご連絡ください。
+                            siltas会員サービス　siltas会員様センター
+                            電話　050-5306-1460
+                            受付時間：10時～17時(土日祝、夏季・年末年始休暇を除く)
+                            ※接客品質向上のため、通話内容を録音させていただく場合がございます。
+                            弊社ではsiltas会員様の個人情報取扱いにつきまして、上記各項目の内容を適宜見直し、改善して参ります。
+                            以上 制定年月日　平成24年4月1日
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="privacy-comment">
+                            上記のプライバシーポリシーを最後までご確認いただいた後、同意のチェックをしてください。
+                        </div>
+                        <div id="privacyCheck" class="check-disabled">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="privacy"
+                                    value="プライバシーポリシーに同意します"
+                                    　disabled
+                                />
+                                <span>プライバシーポリシーに同意します</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label"></div>
+                        <button type="submit">送信</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <!-- ここからフッター -->
+        <footer id="footer">
+            <button
+                id="pagetop"
+                class="pagetop"
+                aria-label="ページトップへ戻る"
+            ></button>
+            <div class="footerdesign">
+                <h2 class="logo">
+                    <a href="index.html"
+                        ><img src="img/logo_wide.png" alt=""
+                    /></a>
+                </h2>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="#">トップ</a></li>
+                        <li><a href="#" class="#">貸し教室</a></li>
+                        <li><a href="#" class="#">ご利用の流れ</a></li>
+                        <li><a href="#" class="#">お知らせ</a></li>
+                        <li><a href="#" class="#">よくあるご質問</a></li>
+                        <li><a href="#" class="#">お問い合わせ</a></li>
+                    </ul>
+                    <ul class="etc">
+                        <li><a href="#">ご利用規約</a></li>
+                        <li><a href="#">個人情報保護方針</a></li>
+                        <li><a href="#">会社案内</a></li>
+                    </ul>
+                </nav>
+                <small
+                    >&copy;2025 Social Bridge Co.,Ltd. All Rights
+                    Reserved.</small
+                >
+            </div>
+        </footer>
+        <!-- ここまでフッター -->
+    </body>
+</html>
